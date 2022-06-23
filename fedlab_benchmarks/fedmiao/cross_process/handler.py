@@ -20,8 +20,8 @@ class FedAmpManager(SynchronousServerManager):
         self._LOGGER.info(f"SETUP: {self._handler.client_num_in_total}")
         self._handler.cloud_model = [deepcopy(self._handler._model).to(self._handler.device) for _ in range(self._handler.client_num_in_total)]
         self._handler._model = [deepcopy(self._handler._model).to(self._handler.device) for _ in range(self._handler.client_num_in_total)]
-        self._acc = [0 for _ in range(self._handler.client_num_in_total)]
-        self._loss = [np.nan for _ in range(self._handler.client_num_in_total)]
+        self._handler._acc = [0 for _ in range(self._handler.client_num_in_total)]
+        self._handler._loss = [np.nan for _ in range(self._handler.client_num_in_total)]
 
     def activate_clients(self):
         """Activate subset of clients to join in one FL round
