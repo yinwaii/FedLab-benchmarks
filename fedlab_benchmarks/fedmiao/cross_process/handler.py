@@ -18,8 +18,8 @@ class FedAmpManager(SynchronousServerManager):
     def setup(self):
         super().setup()
         self._LOGGER.info("SETUP")
-        self._handler._model = [deepcopy(self._handler._model).to(self._handler.device) for _ in range(self._handler.client_num_in_total)]
         self._handler.cloud_model = [deepcopy(self._handler._model).to(self._handler.device) for _ in range(self._handler.client_num_in_total)]
+        self._handler._model = [deepcopy(self._handler._model).to(self._handler.device) for _ in range(self._handler.client_num_in_total)]
         self._acc = [0 for _ in range(self._handler.client_num_in_total)]
         self._loss = [np.nan for _ in range(self._handler.client_num_in_total)]
 
@@ -61,6 +61,7 @@ class FedAmpManager(SynchronousServerManager):
             Exception: Unexpected :class:`MessageCode`.
         """
         while self._handler.if_stop is not True:
+            self._LOGGER.info("Activating clients")
             activate = threading.Thread(target=self.activate_clients)
             activate.start()
 
