@@ -131,7 +131,7 @@ for i in range(args.total_client):
             optimizer=optimizer(model[i].parameters(), lr=args.lr),
             criterion=criterion,
             args=args,
-        ).train(SerializationTool.serialize_model(model[i]), SerializationTool.serialize_model(model[i]))
+        ).train(SerializationTool.serialize_model(model[i]))
         SerializationTool.deserialize_model(model[i], model_parameters)
 
         loss, acc = evaluate(model[i], criterion, test_loader)
@@ -194,7 +194,7 @@ for i in range(args.round):
             optimizer=optimizer(model[selections[index]].parameters(), lr=args.lr),
             criterion=criterion,
             args=args,
-        ).train(SerializationTool.serialize_model(model[selections[index]]), SerializationTool.serialize_model(cloud_model[selections[index]]))
+        ).train(SerializationTool.serialize_model(SerializationTool.serialize_model(cloud_model[selections[index]])))
         SerializationTool.deserialize_model(model[selections[index]], model_parameters)
 
         loss, acc = evaluate(model[selections[index]], criterion, test_loader)

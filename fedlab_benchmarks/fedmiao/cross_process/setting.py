@@ -5,7 +5,7 @@ import sys
 
 from fedlab.utils.dataset.sampler import RawPartitionSampler
 
-sys.path.append('../')
+sys.path.append('../../')
 
 from models.cnn import CNN_CIFAR10, CNN_FEMNIST, CNN_MNIST
 from models.rnn import RNN_Shakespeare
