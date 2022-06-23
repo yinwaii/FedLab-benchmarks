@@ -16,7 +16,7 @@ from fedlab.core.network import DistNetwork
 from fedlab.utils.logger import Logger
 
 sys.path.append("../")
-from fedprox_trainer import FedProxTrainer
+from fedamp_trainer import FedAmpTrainer
 
 if __name__ == "__main__":
 
@@ -81,7 +81,7 @@ if __name__ == "__main__":
 
     LOGGER = Logger(log_name="client " + str(args.rank))
 
-    trainer = FedProxTrainer(
+    trainer = FedAmpTrainer(
         model=model,
         data_loader=trainloader,
         epochs=args.epoch,

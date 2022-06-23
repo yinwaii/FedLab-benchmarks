@@ -65,11 +65,11 @@ class FedAmpTrainer(ClientTrainer):
         return [self.model_parameters]
 
     def local_process(self, payload):
-        local_parameters, cloud_parameters = payload[0]
-        self.train(local_parameters, cloud_parameters)
+        cloud_parameters = payload[0]
+        self.train(cloud_parameters)
 
 
-    def train(self, model_parameters, cloud_parameters):
+    def train(self, cloud_parameters):
         """Client trains its local model on local dataset.
 
         Args:
@@ -77,7 +77,6 @@ class FedAmpTrainer(ClientTrainer):
         """
         u_cloud = deepcopy(self.model)
         SerializationTool.deserialize_model(u_cloud, cloud_parameters)
-        SerializationTool.deserialize_model(self.model, model_parameters)  # load parameters
         self._LOGGER.info("Local train procedure is running")
         for ep in range(self.epochs):
             self.model.train()
