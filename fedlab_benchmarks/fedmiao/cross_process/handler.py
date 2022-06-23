@@ -143,7 +143,7 @@ class FedAmpHandler(SyncParameterServerHandler):
         print(sender_rank, self.client_num_in_total)
         self._acc[sender_rank] = test_acc
         self._loss[sender_rank] = test_loss
-        self.write_file()
+        # self.write_file()
 
         self.cache_cnt += 1
         return self.cache_cnt >= self.client_num_per_round
