@@ -57,7 +57,7 @@ parser.add_argument(
 )  # valid value: {"sgd", "adam", "rmsprop"}
 
 parser.add_argument(
-    "--lamda", type=float, default=5e-3
+    "--lamda", type=float, default=5e-7
 )  # recommended value: {0.001, 0.01, 0.1, 1.0}
 
 parser.add_argument(
@@ -81,7 +81,7 @@ test_loader = DataLoader(
 )
 
 # setup
-os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 if torch.cuda.is_available():
     device = get_best_gpu()
@@ -139,7 +139,7 @@ for i in range(args.total_client):
         print(f"Epoch: {i}    loss: {loss:.4f}    accuracy: {acc:.2f}")
         save_model(i, model)
     else:
-        model[i] = load_model(i, model)
+        model[i] = load_model(i, model).to(device)
 
 # for i in range(args.total_client):
 #     print(i)
@@ -162,16 +162,20 @@ for i in range(args.round):
     params_list = []
     client_epoch = [args.epochs] * len(selections)
     cloud_model = deepcopy(model)
+    for c_m in cloud_model:
+        c_m.to(device)
 
     # local train
     for index in range(len(selections)):
-        model[selections[index]] = load_model(selections[index], model)
+        model[selections[index]] = load_model(selections[index], model).to(device)
         for param in cloud_model[selections[index]].parameters():
             param.data.zero_()
-        coef = torch.zeros(len(selections))
+        coef = torch.zeros(len(selections)).to(device)
         for j in range(len(selections)):
             if selections[j] != selections[index]:
-                diff = (flatten(model[selections[index]]) - flatten(model[selections[j]])).view(-1)
+                wi = flatten(model[selections[index]]).to(device)
+                wj = flatten(model[selections[j]]).to(device)
+                diff = (wi - wj).view(-1)
                 # print(torch.dot(diff, diff))
                 coef[j] = args.alphaK * e(torch.dot(diff, diff))
             else:

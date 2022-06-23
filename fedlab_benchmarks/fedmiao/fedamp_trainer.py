@@ -39,7 +39,7 @@ class FedAmpTrainer(ClientTrainer):
         optimizer,
         criterion,
         args,
-        cuda=False,
+        cuda=True,
         logger=Logger(),
     ):
         super().__init__(model, cuda)
