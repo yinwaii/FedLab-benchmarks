@@ -13,7 +13,7 @@ from fedlab.utils.message_code import MessageCode
 class FedAmpManager(SynchronousServerManager):
 
     def __init__(self, network, handler, logger=None):
-        super().__init__(self, network, handler, logger)
+        super().__init__(network, handler, logger)
 
     def setup(self):
         super().setup()
@@ -134,6 +134,7 @@ class FedAmpHandler(SyncParameterServerHandler):
         # evaluate on test set
         test_loss, test_acc = evaluate(self._model[sender_rank], torch.nn.CrossEntropyLoss(),
                                        self.test_loader)
+        print(f"Epoch: {sender_rank}    loss: {test_loss:.4f}    accuracy: {test_acc:.2f}")
         self._acc[sender_rank] = test_acc
         self._loss[sender_rank] = test_loss
         self.write_file()
