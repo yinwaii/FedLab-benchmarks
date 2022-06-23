@@ -11,9 +11,9 @@ import os
 
 from setting import get_model, get_dataset
 from torch import nn, optim
-from fedlab.core.client.manager import PassiveClientManager
 from fedlab.core.network import DistNetwork
 from fedlab.utils.logger import Logger
+from fedlab.utils.functional import get_best_gpu
 
 sys.path.append("../")
 from fedamp_trainer import FedAmpTrainer
@@ -58,7 +58,7 @@ if __name__ == "__main__":
 
     if args.gpu != "-1":
         args.cuda = True
-        device = torch.device(os.environ["CUDA_VISIBLE_DEVICES"])
+        device = torch.device(get_best_gpu())
     else:
         args.cuda = False
         device = torch.device("cpu")
