@@ -24,6 +24,8 @@ if __name__ == "__main__":
 
     parser.add_argument("--round", type=int, default=5)
 
+    parser.add_argument("--batch_size", type=int, default=10)
+
     parser.add_argument("--dataset", type=str)
 
     parser.add_argument("--ethernet", type=str, default=None)
