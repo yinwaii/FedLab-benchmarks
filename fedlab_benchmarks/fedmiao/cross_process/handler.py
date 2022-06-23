@@ -36,7 +36,7 @@ class FedAmpManager(SynchronousServerManager):
         self._LOGGER.info("Client id list: {}".format(clients_this_round))
 
         for rank, values in rank_dict.items():
-            downlink_package = self._handler.downlink_package(rank)
+            downlink_package = self._handler.downlink_package(rank, clients_this_round)
             id_list = torch.Tensor(values).to(downlink_package[0].dtype)
             self._network.send(content=[id_list] + downlink_package,
                                message_code=MessageCode.ParameterUpdate,
@@ -104,7 +104,7 @@ class FedAmpHandler(SyncParameterServerHandler):
         self._loss = []
         self.cache_cnt = 0
 
-    def downlink_package(self, rank):
+    def downlink_package(self, rank, clients_this_round):
         self._LOGGER.info(f"DOWNLINK: {rank}")
         rank -= 1
         flatten = lambda model: torch.cat([param.view(-1) for param in model.parameters()])
@@ -114,9 +114,9 @@ class FedAmpHandler(SyncParameterServerHandler):
         coef = torch.zeros(self.client_num_per_round).to(self.device)
         rank_index = -1
         for j in range(self.client_num_per_round):
-            if self.sample_clients[j] != rank:
+            if self.clients_this_round[j] != rank:
                 wi = flatten(self._model[rank]).to(self.device)
-                wj = flatten(self.model[self.sample_clients[j]]).to(self.device)
+                wj = flatten(self.model[self.clients_this_round[j]]).to(self.device)
                 diff = (wi - wj).view(-1)
                 # print(torch.dot(diff, diff))
                 coef[j] = self.alphaK * e(torch.dot(diff, diff))
@@ -125,7 +125,7 @@ class FedAmpHandler(SyncParameterServerHandler):
                 rank_index = j
         coef[rank_index] = 1 - torch.sum(coef)
         for j in range(self.client_num_per_round):
-            for cloud, local in zip(self.cloud_model[rank].parameters(), self._model[self.sample_clients[j]].parameters()):
+            for cloud, local in zip(self.cloud_model[rank].parameters(), self._model[self.clients_this_round[j]].parameters()):
                 cloud.data += coef[j] * local.data
         return [SerializationTool.serialize_model(self.cloud_model[rank])]
 
