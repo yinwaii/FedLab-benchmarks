@@ -140,6 +140,7 @@ class FedAmpHandler(SyncParameterServerHandler):
         test_loss, test_acc = evaluate(self._model[sender_rank], torch.nn.CrossEntropyLoss(),
                                        self.test_loader)
         print(f"Epoch: {sender_rank}    loss: {test_loss:.4f}    accuracy: {test_acc:.2f}")
+        print(sender_rank, self.client_num_in_total)
         self._acc[sender_rank] = test_acc
         self._loss[sender_rank] = test_loss
         self.write_file()
