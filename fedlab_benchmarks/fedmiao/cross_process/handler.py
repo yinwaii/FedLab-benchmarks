@@ -106,6 +106,7 @@ class FedAmpHandler(SyncParameterServerHandler):
 
     def downlink_package(self, rank):
         self._LOGGER.info(f"DOWNLINK: {rank}")
+        rank -= 1
         flatten = lambda model: torch.cat([param.view(-1) for param in model.parameters()])
         e = lambda x: math.exp(-x/self.sigma)/self.sigma
         for param in self.cloud_model[rank].parameters():
@@ -129,6 +130,7 @@ class FedAmpHandler(SyncParameterServerHandler):
         return [SerializationTool.serialize_model(self.cloud_model[rank])]
 
     def _update_global_model(self, sender_rank, model_parameters_list):
+        sender_rank -= 1
         self._LOGGER.info(
             "Model parameters aggregation, number of aggregation elements {}".
                 format(len(model_parameters_list)))
