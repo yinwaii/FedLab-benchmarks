@@ -114,9 +114,9 @@ class FedAmpHandler(SyncParameterServerHandler):
         coef = torch.zeros(self.client_num_per_round).to(self.device)
         rank_index = -1
         for j in range(self.client_num_per_round):
-            if self.clients_this_round[j] != rank:
+            if clients_this_round[j] != rank:
                 wi = flatten(self._model[rank]).to(self.device)
-                wj = flatten(self.model[self.clients_this_round[j]]).to(self.device)
+                wj = flatten(self.model[clients_this_round[j]]).to(self.device)
                 diff = (wi - wj).view(-1)
                 # print(torch.dot(diff, diff))
                 coef[j] = self.alphaK * e(torch.dot(diff, diff))
@@ -125,7 +125,7 @@ class FedAmpHandler(SyncParameterServerHandler):
                 rank_index = j
         coef[rank_index] = 1 - torch.sum(coef)
         for j in range(self.client_num_per_round):
-            for cloud, local in zip(self.cloud_model[rank].parameters(), self._model[self.clients_this_round[j]].parameters()):
+            for cloud, local in zip(self.cloud_model[rank].parameters(), self._model[clients_this_round[j]].parameters()):
                 cloud.data += coef[j] * local.data
         return [SerializationTool.serialize_model(self.cloud_model[rank])]
 
