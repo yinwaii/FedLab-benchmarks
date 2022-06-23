@@ -1,6 +1,6 @@
 #!bin/bash
 
-python server.py --ip 127.0.0.1 --port 3002 --world_size 11 --dataset mnist &
+python server.py --ip 127.0.0.1 --port 3002 --world_size 11 --rank 0 --dataset mnist &
 
 python client.py --ip 127.0.0.1 --port 3002 --world_size 11 --rank 1 --dataset mnist &
 

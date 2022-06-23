@@ -58,8 +58,7 @@ if __name__ == "__main__":
 
     if args.gpu != "-1":
         args.cuda = True
-        os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
-        device = torch.device(args.gpu)
+        device = torch.device(os.environ["CUDA_VISIBLE_DEVICES"])
     else:
         args.cuda = False
         device = torch.device("cpu")
