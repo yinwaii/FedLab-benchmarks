@@ -17,7 +17,7 @@ class FedAmpManager(SynchronousServerManager):
 
     def setup(self):
         super().setup()
-        self._LOGGER.info("SETUP")
+        self._LOGGER.info("SETUP", self._handler.client_num_in_total)
         self._handler.cloud_model = [deepcopy(self._handler._model).to(self._handler.device) for _ in range(self._handler.client_num_in_total)]
         self._handler._model = [deepcopy(self._handler._model).to(self._handler.device) for _ in range(self._handler.client_num_in_total)]
         self._acc = [0 for _ in range(self._handler.client_num_in_total)]
@@ -105,6 +105,7 @@ class FedAmpHandler(SyncParameterServerHandler):
         self.cache_cnt = 0
 
     def downlink_package(self, rank):
+        self._LOGGER.info("DOWNLINK", rank)
         flatten = lambda model: torch.cat([param.view(-1) for param in model.parameters()])
         e = lambda x: math.exp(-x/self.sigma)/self.sigma
         for param in self.cloud_model[rank].parameters():
