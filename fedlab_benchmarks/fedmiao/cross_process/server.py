@@ -41,6 +41,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     model = get_model(args)
+    args.rank = 1
     _, test_loader = get_dataset(args)
     LOGGER = Logger(log_name="server")
     handler = FedAmpHandler(model,
