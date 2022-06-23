@@ -12,6 +12,7 @@ import os
 from setting import get_model, get_dataset
 from torch import nn, optim
 from fedlab.core.network import DistNetwork
+from fedlab.core.client.manager import PassiveClientManager
 from fedlab.utils.logger import Logger
 from fedlab.utils.functional import get_best_gpu
 
@@ -91,7 +92,7 @@ if __name__ == "__main__":
         logger=LOGGER,
     )
 
-    manager_ = ClientPassiveManager(trainer=trainer,
+    manager_ = PassiveClientManager(trainer=trainer,
                                     network=network,
                                     logger=LOGGER)
     manager_.run()

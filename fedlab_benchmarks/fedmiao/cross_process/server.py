@@ -50,7 +50,8 @@ if __name__ == "__main__":
                             test_loader=test_loader,
                             global_round=args.round,
                             logger=LOGGER,
-                            sample_ratio=args.sample)
+                            sample_ratio=args.sample,
+                            args=args)
     network = DistNetwork(
         address=(args.ip, args.port),
         world_size=args.world_size,
