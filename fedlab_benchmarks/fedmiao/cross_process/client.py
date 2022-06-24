@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
     parser.add_argument("--dataset", type=str)
 
-    parser.add_argument("--batch_size", type=int, default=100)
+    parser.add_argument("--batch_size", type=int, default=500)
 
     parser.add_argument("--gpu", type=str, default="0,1,2,3")
 

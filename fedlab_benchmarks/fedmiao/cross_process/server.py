@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
     parser.add_argument("--round", type=int, default=5)
 
-    parser.add_argument("--batch_size", type=int, default=100)
+    parser.add_argument("--batch_size", type=int, default=500)
 
     parser.add_argument("--dataset", type=str)
 
