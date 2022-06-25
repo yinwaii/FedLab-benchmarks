@@ -38,6 +38,7 @@ class FedAmpManager(SynchronousServerManager):
         for rank, values in rank_dict.items():
             downlink_package = self._handler.downlink_package(rank, clients_this_round)
             id_list = torch.Tensor(values).to(downlink_package[0].dtype)
+            self._LOGGER.info(f'rank: {rank} id_list:{id_list} downlink:{downlink_package}')
             self._network.send(content=[id_list] + downlink_package,
                                message_code=MessageCode.ParameterUpdate,
                                dst=rank)
@@ -139,11 +140,16 @@ class FedAmpHandler(SyncParameterServerHandler):
         # evaluate on test set
         test_loss, test_acc = evaluate(self._model[sender_rank], torch.nn.CrossEntropyLoss(),
                                        self.test_loader)
-        print(f"Epoch: {sender_rank}    loss: {test_loss:.4f}    accuracy: {test_acc:.2f}")
-        print(sender_rank, self.client_num_in_total)
+        self._LOGGER.info(f"Epoch: {sender_rank}    loss: {test_loss:.4f}    accuracy: {test_acc:.2f}")
+        self._LOGGER.info(f'cur: {sender_rank}, total: {self.client_num_in_total}')
         self._acc[sender_rank] = test_acc
         self._loss[sender_rank] = test_loss
         # self.write_file()
 
         self.cache_cnt += 1
-        return self.cache_cnt >= self.client_num_per_round
+
+        if self.cache_cnt >= self.client_num_per_round:
+            self.cache_cnt -= self.client_num_per_round
+            return True
+        else:
+            return False
