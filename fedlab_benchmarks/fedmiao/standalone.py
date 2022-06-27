@@ -40,7 +40,7 @@ parser.add_argument("--sample_ratio", type=float, default=0.1)
 
 parser.add_argument("--batch_size", type=int, default=100)
 
-parser.add_argument("--lr", type=float, default=0.005)
+parser.add_argument("--lr", type=float, default=0.001)
 
 parser.add_argument("--epochs", type=int, default=5)
 
@@ -49,19 +49,19 @@ parser.add_argument("--partition", type=str, default="iid")
 parser.add_argument("--round", type=int, default=10)
 
 parser.add_argument(
-    "--alphaK", type=float, default=0.005
+    "--alphaK", type=float, default=10000
 )  # vaild value should be in range [0, 1] and mod 0.1 == 0
 
 parser.add_argument(
-    "--optimizer", type=str, default="sgd"
+    "--optimizer", type=str, default="adam"
 )  # valid value: {"sgd", "adam", "rmsprop"}
 
 parser.add_argument(
-    "--lamda", type=float, default=1e-3
+    "--lamda", type=float, default=1
 )  # recommended value: {0.001, 0.01, 0.1, 1.0}
 
 parser.add_argument(
-    "--sigma", type=float, default=0.1
+    "--sigma", type=float, default=100
 )  # recommended value: {0.001, 0.01, 0.1, 1.0}
 
 args = parser.parse_args()
@@ -97,7 +97,7 @@ criterion = nn.CrossEntropyLoss()
 
 if args.partition == "noniid":
     data_indices = noniid_slicing(
-        dataset=trainset, num_clients=total_client_num, num_shards=args.total_client * 2
+        dataset=trainset, num_clients=total_client_num, num_shards=40
     )
 else:
     data_indices = random_slicing(dataset=trainset, num_clients=total_client_num)
