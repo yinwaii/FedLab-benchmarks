@@ -57,7 +57,7 @@ parser.add_argument(
 )  # valid value: {"sgd", "adam", "rmsprop"}
 
 parser.add_argument(
-    "--lamda", type=float, default=5e-7
+    "--lamda", type=float, default=1e-3
 )  # recommended value: {0.001, 0.01, 0.1, 1.0}
 
 parser.add_argument(
@@ -97,7 +97,7 @@ criterion = nn.CrossEntropyLoss()
 
 if args.partition == "noniid":
     data_indices = noniid_slicing(
-        dataset=trainset, num_clients=total_client_num, num_shards=200
+        dataset=trainset, num_clients=total_client_num, num_shards=args.total_client * 2
     )
 else:
     data_indices = random_slicing(dataset=trainset, num_clients=total_client_num)
