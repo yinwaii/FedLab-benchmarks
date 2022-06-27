@@ -108,7 +108,7 @@ trainloader_list = [
 
 # train
 for i in range(args.round):
-    load_model(0, model)
+    load_model(model)
     selections = random.sample(to_select, num_per_round)
     params_list = []
     client_epoch = [args.epochs] * len(selections)
@@ -145,6 +145,6 @@ for i in range(args.round):
 
     # evaluate
     loss, acc = evaluate(model, criterion, test_loader)
-    save_model(0, model)
+    save_model(model)
     print(f"Epoch: {i}    loss: {loss:.4f}    accuracy: {acc:.2f}")
 
