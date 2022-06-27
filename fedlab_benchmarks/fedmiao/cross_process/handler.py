@@ -42,6 +42,30 @@ class FedAmpManager(SynchronousServerManager):
             self._network.send(content=[id_list] + downlink_package,
                                message_code=MessageCode.ParameterUpdate,
                                dst=rank)
+        
+    def shutdown_clients(self):
+        """Shutdown all clients.
+
+        Send package to each client with :attr:`MessageCode.Exit`.
+
+        Note:
+            Communication agreements related: User can overwrite this function to define package
+            for exiting information.
+        """
+        client_list = range(self._handler.client_num_in_total)
+        rank_dict = self.coordinator.map_id_list(client_list)
+
+        for rank, values in rank_dict.items():
+            downlink_package = self._handler.downlink_package(rank, client_list)
+            id_list = torch.Tensor(values).to(downlink_package[0].dtype)
+            self._network.send(content=[id_list] + downlink_package,
+                               message_code=MessageCode.Exit,
+                               dst=rank)
+
+        # wait for client exit feedback
+        _, message_code, _ = self._network.recv(src=self._network.world_size -
+                                                1)
+        assert message_code == MessageCode.Exit
 
     def main_loop(self):
         """Actions to perform in server when receiving a package from one client.
@@ -147,6 +171,7 @@ class FedAmpHandler(SyncParameterServerHandler):
         # self.write_file()
 
         self.cache_cnt += 1
+        self.round += 1
 
         if self.cache_cnt >= self.client_num_per_round:
             self.cache_cnt -= self.client_num_per_round

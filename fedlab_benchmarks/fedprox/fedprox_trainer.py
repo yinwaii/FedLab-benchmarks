@@ -1,13 +1,13 @@
 import torch
 from copy import deepcopy
 
-from fedlab.core.client import ClientSGDTrainer
+from fedlab.core.client import SGDClientTrainer
 from fedlab.utils.serialization import SerializationTool
 from fedlab.utils import Logger
 from tqdm import tqdm
 
 
-class FedProxTrainer(ClientSGDTrainer):
+class FedProxTrainer(SGDClientTrainer):
     """FedProxTrainer. 
 
     Details of FedProx are available in paper: https://arxiv.org/abs/1812.06127

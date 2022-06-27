@@ -20,8 +20,11 @@ from fedlab.utils.functional import get_best_gpu
 from fedlab.utils.dataset.sampler import SubsetSampler
 from fedlab.utils.dataset.slicing import noniid_slicing, random_slicing
 
+sys.path.append('..')
+
 from models.cnn import CNN_MNIST
 from fedprox_trainer import FedProxTrainer
+from persistence import save_model, load_model
 
 parser = argparse.ArgumentParser(description="Standalone training example")
 parser.add_argument("--total_client", type=int, default=100)
@@ -67,7 +70,7 @@ test_loader = DataLoader(
 )
 
 # setup
-os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 
 if torch.cuda.is_available():
     device = get_best_gpu()
@@ -105,6 +108,7 @@ trainloader_list = [
 
 # train
 for i in range(args.round):
+    load_model(0, model)
     selections = random.sample(to_select, num_per_round)
     params_list = []
     client_epoch = [args.epochs] * len(selections)
@@ -131,7 +135,8 @@ for i in range(args.round):
             criterion=criterion,
             mu=args.mu,
         ).train(SerializationTool.serialize_model(local_model))
-
+        loss, acc = evaluate(local_model, criterion, test_loader)
+        print(f"Epoch: {selections[c]}    loss: {loss:.4f}    accuracy: {acc:.2f}")
         params_list.append(model_param)
 
     # update global model
@@ -140,5 +145,6 @@ for i in range(args.round):
 
     # evaluate
     loss, acc = evaluate(model, criterion, test_loader)
+    save_model(0, model)
     print(f"Epoch: {i}    loss: {loss:.4f}    accuracy: {acc:.2f}")
 
