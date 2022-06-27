@@ -107,6 +107,7 @@ trainloader_list = [
 ]
 
 # train
+acc_list = [0 for _ in range(args.total_client)]
 for i in range(args.round):
     load_model(model)
     selections = random.sample(to_select, num_per_round)
@@ -126,6 +127,7 @@ for i in range(args.round):
 
     # local train
     for c in range(len(selections)):
+        print(i,c,selections[c])
         local_model = deepcopy(model)
         model_param = FedProxTrainer(
             model=local_model,
@@ -138,12 +140,14 @@ for i in range(args.round):
         loss, acc = evaluate(local_model, criterion, test_loader)
         print(f"Epoch: {selections[c]}    loss: {loss:.4f}    accuracy: {acc:.2f}")
         params_list.append(model_param)
+        acc_list[selections[c]] = acc
 
     # update global model
     aggregated_params = aggregator(params_list)
     SerializationTool.deserialize_model(model, aggregated_params)
 
     # evaluate
+    print(acc_list)
     loss, acc = evaluate(model, criterion, test_loader)
     save_model(model)
     print(f"Epoch: {i}    loss: {loss:.4f}    accuracy: {acc:.2f}")
