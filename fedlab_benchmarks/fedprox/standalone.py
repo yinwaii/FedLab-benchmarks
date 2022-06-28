@@ -109,7 +109,10 @@ trainloader_list = [
 # train
 acc_list = [0 for _ in range(args.total_client)]
 for i in range(args.round):
-    load_model(model)
+    if not load_model(model):
+        model = CNN_MNIST().to(device)
+    else:
+        model = load_model(model)
     selections = random.sample(to_select, num_per_round)
     params_list = []
     client_epoch = [args.epochs] * len(selections)
