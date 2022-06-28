@@ -24,10 +24,11 @@ else:
 
 from models.cnn import CNN_MNIST
 flatten = lambda model: torch.cat([param.view(-1) for param in model.parameters()])
-e = lambda x: math.exp(-x/0.1)/0.1
+e = lambda x: math.exp(-x/100)/100
 
 model = [load_model(i).to(device) for i in range(20)]
 coef = torch.zeros((20,20))
+print(model)
 for i in range(20):
     for j in range(20):
         if j != i:
@@ -35,7 +36,7 @@ for i in range(20):
             wj = flatten(model[j]).to(device)
             diff = (wi - wj).view(-1)
             # print(torch.dot(diff, diff))
-            coef[i][j] = 0.005 * e(torch.dot(diff, diff))
+            coef[i][j] = 10000 * e(torch.dot(diff, diff))
         else:
             coef[i][j] = 0
 # for index in range(20):
