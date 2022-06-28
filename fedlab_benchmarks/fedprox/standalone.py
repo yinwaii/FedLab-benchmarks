@@ -87,7 +87,7 @@ criterion = nn.CrossEntropyLoss()
 
 if args.partition == "noniid":
     data_indices = noniid_slicing(
-        dataset=trainset, num_clients=total_client_num, num_shards=100
+        dataset=trainset, num_clients=total_client_num, num_shards=400
     )
 else:
     data_indices = random_slicing(dataset=trainset, num_clients=total_client_num)
