@@ -22,8 +22,9 @@ from fedlab.utils.dataset.slicing import noniid_slicing, random_slicing
 
 sys.path.append('..')
 
-from models.cnn import CNN_MNIST
+from models.cnn import CNN_MNIST, CNN_FEMNIST
 from fedprox_trainer import FedProxTrainer
+from leaf.dataloader import get_LEAF_dataloader
 from persistence import save_model, load_model
 
 parser = argparse.ArgumentParser(description="Standalone training example")
@@ -46,7 +47,7 @@ parser.add_argument(
 )  # vaild value should be in range [0, 1] and mod 0.1 == 0
 
 parser.add_argument(
-    "--optimizer", type=str, default="adam"
+    "--optimizer", type=str, default="sgd"
 )  # valid value: {"sgd", "adam", "rmsprop"}
 
 parser.add_argument(
@@ -97,20 +98,28 @@ optimizer = optimizer_dict[args.optimizer]
 
 # initialize training dataloaders of each client
 to_select = [i for i in range(args.total_client)]
-trainloader_list = [
-    DataLoader(
-        dataset=trainset,
-        batch_size=args.batch_size,
-        sampler=SubsetSampler(indices=data_indices[i]),
-    )
-    for i in to_select
-]
+# trainloader_list = [
+#     DataLoader(
+#         dataset=trainset,
+#         batch_size=args.batch_size,
+#         sampler=SubsetSampler(indices=data_indices[i]),
+#     )
+#     for i in to_select
+# ]    
+trainloader_list = []
+testloader_list = []
+for i in to_select:
+    train_loader, test_loader = get_LEAF_dataloader(
+            dataset="femnist", client_id=i
+        )
+    trainloader_list.append(train_loader)
+    testloader_list.append(test_loader)
 
 # train
 acc_list = [0 for _ in range(args.total_client)]
 for i in range(args.round):
     if not load_model(model):
-        model = CNN_MNIST().to(device)
+        model = CNN_FEMNIST().to(device)
     else:
         model = load_model(model)
     selections = random.sample(to_select, num_per_round)
@@ -140,7 +149,7 @@ for i in range(args.round):
             criterion=criterion,
             mu=args.mu,
         ).train(SerializationTool.serialize_model(local_model))
-        loss, acc = evaluate(local_model, criterion, test_loader)
+        loss, acc = evaluate(local_model, criterion, testloader_list[selections[c]])
         print(f"Epoch: {selections[c]}    loss: {loss:.4f}    accuracy: {acc:.2f}")
         params_list.append(model_param)
         acc_list[selections[c]] = acc
@@ -151,7 +160,8 @@ for i in range(args.round):
 
     # evaluate
     print(acc_list)
-    loss, acc = evaluate(model, criterion, test_loader)
+    print(max(acc_list))
+    # loss, acc = evaluate(model, criterion, test_loader)
     save_model(model)
-    print(f"Epoch: {i}    loss: {loss:.4f}    accuracy: {acc:.2f}")
+    # print(f"Epoch: {i}    loss: {loss:.4f}    accuracy: {acc:.2f}")
 

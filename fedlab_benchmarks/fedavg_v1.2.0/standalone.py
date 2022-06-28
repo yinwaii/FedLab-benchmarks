@@ -81,7 +81,7 @@ num_per_round = int(args.total_client * args.sample_ratio)
 aggregator = Aggregators.fedavg_aggregate
 total_client_num = args.total_client  # client总数
 
-data_indices = load_dict("mnist_partition.pkl")
+data_indices = load_dict("mnist_noniid.pkl")
 
 # fedlab setup
 trainer = SubsetSerialTrainer(model=model,

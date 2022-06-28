@@ -11,7 +11,7 @@ import torch
 
 torch.manual_seed(0)
 
-from fedlab.core.client.scale.trainer import SubsetSerialTrainer
+from fedlab.core.client.serial_trainer import SubsetSerialTrainer
 from fedlab.utils.aggregator import Aggregators
 from fedlab.utils.serialization import SerializationTool
 from fedlab.utils.functional import evaluate
@@ -65,7 +65,7 @@ test_loader = torch.utils.data.DataLoader(testset,
                                           shuffle=False)
 
 # setup
-os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 
 if torch.cuda.is_available():
     device = get_best_gpu()

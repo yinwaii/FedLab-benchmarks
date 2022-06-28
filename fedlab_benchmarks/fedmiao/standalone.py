@@ -29,8 +29,9 @@ from fedlab.utils.dataset.slicing import noniid_slicing, random_slicing
 
 sys.path.append("../")
 
-from models.cnn import CNN_MNIST
+from models.cnn import CNN_FEMNIST
 from fedamp_trainer import FedAmpTrainer
+from leaf.dataloader import get_LEAF_dataloader
 from persistence import save_model, load_model
 
 parser = argparse.ArgumentParser(description="Standalone training example")
@@ -53,7 +54,7 @@ parser.add_argument(
 )  # vaild value should be in range [0, 1] and mod 0.1 == 0
 
 parser.add_argument(
-    "--optimizer", type=str, default="adam"
+    "--optimizer", type=str, default="sgd"
 )  # valid value: {"sgd", "adam", "rmsprop"}
 
 parser.add_argument(
@@ -107,16 +108,24 @@ optimizer = optimizer_dict[args.optimizer]
 
 # initialize training dataloaders of each client
 to_select = [i for i in range(args.total_client)]
-trainloader_list = [
-    DataLoader(
-        dataset=trainset,
-        batch_size=args.batch_size,
-        sampler=SubsetSampler(indices=data_indices[i]),
-    )
-    for i in to_select
-]    
+# trainloader_list = [
+#     DataLoader(
+#         dataset=trainset,
+#         batch_size=args.batch_size,
+#         sampler=SubsetSampler(indices=data_indices[i]),
+#     )
+#     for i in to_select
+# ]    
+trainloader_list = []
+testloader_list = []
+for i in to_select:
+    train_loader, test_loader = get_LEAF_dataloader(
+            dataset="femnist", client_id=i
+        )
+    trainloader_list.append(train_loader)
+    testloader_list.append(test_loader)
 
-model = [CNN_MNIST().to(device) for _ in to_select]
+model = [CNN_FEMNIST().to(device) for _ in to_select]
 flatten = lambda model: torch.cat([param.view(-1) for param in model.parameters()])
 e = lambda x: math.exp(-x/args.sigma)/args.sigma
 
@@ -124,19 +133,20 @@ acc_list = [ 0 for _ in range(args.total_client)]
 
 for i in range(args.total_client):
     if not load_model(i, model):
-        model_parameters = FedAmpTrainer(
-            model=model[i],
-            data_loader=trainloader_list[i],
-            epochs=args.epochs,
-            optimizer=optimizer(model[i].parameters(), lr=args.lr),
-            criterion=criterion,
-            args=args,
-        ).train(SerializationTool.serialize_model(model[i]))
-        SerializationTool.deserialize_model(model[i], model_parameters)
+        model[i]=CNN_FEMNIST().to(device)
+        # model_parameters = FedAmpTrainer(
+        #     model=model[i],
+        #     data_loader=trainloader_list[i],
+        #     epochs=args.epochs,
+        #     optimizer=optimizer(model[i].parameters(), lr=args.lr),
+        #     criterion=criterion,
+        #     args=args,
+        # ).train(SerializationTool.serialize_model(model[i]))
+        # SerializationTool.deserialize_model(model[i], model_parameters)
 
-        loss, acc = evaluate(model[i], criterion, test_loader)
-        acc_list[i] = acc
-        print(f"Epoch: {i}    loss: {loss:.4f}    accuracy: {acc:.2f}")
+        # loss, acc = evaluate(model[i], criterion, test_loader)
+        # acc_list[i] = acc
+        # print(f"Epoch: {i}    loss: {loss:.4f}    accuracy: {acc:.2f}")
         save_model(i, model)
     else:
         model[i] = load_model(i, model).to(device)
@@ -197,7 +207,7 @@ for i in range(args.round):
         ).train(SerializationTool.serialize_model(cloud_model[selections[index]]))
         SerializationTool.deserialize_model(model[selections[index]], model_parameters)
 
-        loss, acc = evaluate(model[selections[index]], criterion, test_loader)
+        loss, acc = evaluate(model[selections[index]], criterion, testloader_list[selections[index]])
         acc_list[selections[index]] = acc
         print(f"Epoch: {i}    loss: {loss:.4f}    accuracy: {acc:.2f}")
         save_model(selections[index], model)

@@ -1,0 +1,1081 @@
+16:02:16 - numexpr.utils - INFO - NumExpr defaulting to 2 threads.
+16:02:19 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 181.78it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 187.96it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 186.69it/s]
+root, Epoch 3: 100% 300/300 [00:02<00:00, 147.34it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 156.07it/s]
+16:02:28 - root - INFO - Local train procedure is finished
+Epoch: 0    loss: 3.8016    accuracy: 0.26
+16:02:29 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 186.33it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 189.75it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 190.51it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 193.46it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 186.61it/s]
+16:02:37 - root - INFO - Local train procedure is finished
+Epoch: 1    loss: 4.9108    accuracy: 0.29
+16:02:38 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 189.29it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 189.72it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 185.09it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 189.33it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 188.27it/s]
+16:02:46 - root - INFO - Local train procedure is finished
+Epoch: 2    loss: 5.4086    accuracy: 0.15
+16:02:47 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 189.02it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 189.56it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 184.48it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 189.40it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 185.43it/s]
+16:02:55 - root - INFO - Local train procedure is finished
+Epoch: 3    loss: 5.3656    accuracy: 0.26
+16:02:57 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 186.86it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 187.81it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 185.35it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 186.93it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 186.20it/s]
+16:03:05 - root - INFO - Local train procedure is finished
+Epoch: 4    loss: 4.9934    accuracy: 0.21
+16:03:06 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 191.85it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 188.99it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 192.76it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 187.11it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 191.57it/s]
+16:03:14 - root - INFO - Local train procedure is finished
+Epoch: 5    loss: 5.9376    accuracy: 0.18
+16:03:15 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 186.44it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 188.65it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 188.23it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 187.56it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 183.90it/s]
+16:03:23 - root - INFO - Local train procedure is finished
+Epoch: 6    loss: 4.0897    accuracy: 0.27
+16:03:25 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 188.13it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 188.10it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 185.61it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 190.69it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 185.37it/s]
+16:03:33 - root - INFO - Local train procedure is finished
+Epoch: 7    loss: 5.0123    accuracy: 0.19
+16:03:34 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 189.26it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 187.37it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 192.44it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 187.90it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 190.08it/s]
+16:03:42 - root - INFO - Local train procedure is finished
+Epoch: 8    loss: 4.5927    accuracy: 0.20
+16:03:43 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 191.30it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 192.11it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 189.31it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 188.24it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 188.90it/s]
+16:03:51 - root - INFO - Local train procedure is finished
+Epoch: 9    loss: 3.9540    accuracy: 0.25
+16:03:52 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 188.61it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 189.80it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 186.50it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 183.69it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 183.64it/s]
+16:04:00 - root - INFO - Local train procedure is finished
+Epoch: 10    loss: 4.2560    accuracy: 0.21
+16:04:02 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 183.57it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 190.11it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 185.92it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 187.11it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 187.11it/s]
+16:04:10 - root - INFO - Local train procedure is finished
+Epoch: 11    loss: 3.4854    accuracy: 0.23
+16:04:11 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 191.11it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 190.35it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 189.17it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 190.51it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 183.51it/s]
+16:04:19 - root - INFO - Local train procedure is finished
+Epoch: 12    loss: 4.4924    accuracy: 0.17
+16:04:20 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 190.80it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 185.84it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 186.16it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 189.33it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 189.08it/s]
+16:04:28 - root - INFO - Local train procedure is finished
+Epoch: 13    loss: 4.4642    accuracy: 0.31
+16:04:29 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 188.67it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 185.65it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 183.86it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 184.61it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 190.79it/s]
+16:04:37 - root - INFO - Local train procedure is finished
+Epoch: 14    loss: 5.1506    accuracy: 0.22
+16:04:39 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 187.85it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 188.02it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 186.86it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 185.09it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 191.33it/s]
+16:04:47 - root - INFO - Local train procedure is finished
+Epoch: 15    loss: 4.3530    accuracy: 0.25
+16:04:48 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 186.85it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 186.12it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 191.45it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 183.99it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 184.23it/s]
+16:04:56 - root - INFO - Local train procedure is finished
+Epoch: 16    loss: 3.8354    accuracy: 0.17
+16:04:57 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 185.87it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 186.57it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 190.13it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 186.80it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 186.36it/s]
+16:05:05 - root - INFO - Local train procedure is finished
+Epoch: 17    loss: 4.3873    accuracy: 0.18
+16:05:07 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 188.59it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 187.65it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 189.45it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 182.71it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 188.12it/s]
+16:05:15 - root - INFO - Local train procedure is finished
+Epoch: 18    loss: 4.2435    accuracy: 0.18
+16:05:16 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 194.78it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 191.44it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 185.11it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 183.93it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 190.56it/s]
+16:05:24 - root - INFO - Local train procedure is finished
+Epoch: 19    loss: 4.6111    accuracy: 0.19
+0 0 2
+16:05:25 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 183.57it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 187.45it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 190.79it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 184.21it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 185.22it/s]
+16:05:33 - root - INFO - Local train procedure is finished
+Epoch: 0    loss: 4.3730    accuracy: 0.37
+0 1 7
+16:05:35 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 188.87it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 188.97it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 188.98it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 183.57it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 187.09it/s]
+16:05:43 - root - INFO - Local train procedure is finished
+Epoch: 0    loss: 4.6131    accuracy: 0.41
+0 2 9
+16:05:44 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 187.80it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 186.38it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 184.74it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 184.73it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 181.63it/s]
+16:05:52 - root - INFO - Local train procedure is finished
+Epoch: 0    loss: 2.6139    accuracy: 0.44
+0 3 16
+16:05:53 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 185.24it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 184.52it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 183.63it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 179.75it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 182.83it/s]
+16:06:01 - root - INFO - Local train procedure is finished
+Epoch: 0    loss: 3.8544    accuracy: 0.41
+0 4 15
+16:06:03 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 184.30it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 189.39it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 184.88it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 187.31it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 184.55it/s]
+16:06:11 - root - INFO - Local train procedure is finished
+Epoch: 0    loss: 4.0151    accuracy: 0.42
+0 5 4
+16:06:12 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 186.08it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 190.02it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 189.58it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 185.46it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 187.07it/s]
+16:06:20 - root - INFO - Local train procedure is finished
+Epoch: 0    loss: 3.6764    accuracy: 0.43
+0 6 8
+16:06:21 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 185.03it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 183.49it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 187.75it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 182.75it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 185.73it/s]
+16:06:29 - root - INFO - Local train procedure is finished
+Epoch: 0    loss: 3.3698    accuracy: 0.36
+0 7 17
+16:06:31 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 186.51it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 186.63it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 190.14it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 187.45it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 184.70it/s]
+16:06:39 - root - INFO - Local train procedure is finished
+Epoch: 0    loss: 3.3332    accuracy: 0.40
+0 8 14
+16:06:40 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 186.35it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 182.35it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 186.05it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 186.99it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 186.87it/s]
+16:06:48 - root - INFO - Local train procedure is finished
+Epoch: 0    loss: 4.0338    accuracy: 0.35
+0 9 11
+16:06:49 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 190.55it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 183.87it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 181.32it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 182.06it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 183.10it/s]
+16:06:58 - root - INFO - Local train procedure is finished
+Epoch: 0    loss: 3.1560    accuracy: 0.50
+[0.2554, 0.2873, 0.3652, 0.2597, 0.4303, 0.1753, 0.2666, 0.4149, 0.3604, 0.444, 0.2144, 0.5006, 0.1656, 0.3092, 0.3451, 0.4237, 0.4053, 0.3985, 0.183, 0.1865]
+0.5006
+1 0 3
+16:06:59 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 179.90it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 187.91it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 184.67it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 184.76it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 183.18it/s]
+16:07:07 - root - INFO - Local train procedure is finished
+Epoch: 1    loss: 5.2979    accuracy: 0.29
+1 1 17
+16:07:08 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 185.62it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 185.48it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 190.26it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 188.52it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 183.45it/s]
+16:07:16 - root - INFO - Local train procedure is finished
+Epoch: 1    loss: 3.0877    accuracy: 0.49
+1 2 9
+16:07:18 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 188.63it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 182.61it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 184.09it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 185.28it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 184.34it/s]
+16:07:26 - root - INFO - Local train procedure is finished
+Epoch: 1    loss: 2.3807    accuracy: 0.54
+1 3 7
+16:07:27 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 185.88it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 185.40it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 179.01it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 181.01it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 184.11it/s]
+16:07:35 - root - INFO - Local train procedure is finished
+Epoch: 1    loss: 4.8123    accuracy: 0.49
+1 4 12
+16:07:37 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 184.32it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 181.71it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 181.70it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 185.83it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 180.95it/s]
+16:07:45 - root - INFO - Local train procedure is finished
+Epoch: 1    loss: 2.2073    accuracy: 0.46
+1 5 16
+16:07:46 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 183.73it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 186.15it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 186.43it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 183.35it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 181.54it/s]
+16:07:54 - root - INFO - Local train procedure is finished
+Epoch: 1    loss: 3.8853    accuracy: 0.49
+1 6 0
+16:07:55 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 183.28it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 182.87it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 187.79it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 186.54it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 183.04it/s]
+16:08:04 - root - INFO - Local train procedure is finished
+Epoch: 1    loss: 3.3795    accuracy: 0.39
+1 7 1
+16:08:05 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 184.12it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 185.07it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 186.33it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 190.07it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 186.14it/s]
+16:08:13 - root - INFO - Local train procedure is finished
+Epoch: 1    loss: 4.7115    accuracy: 0.45
+1 8 5
+16:08:14 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:02<00:00, 144.63it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 159.66it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 188.32it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 185.81it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 187.91it/s]
+16:08:23 - root - INFO - Local train procedure is finished
+Epoch: 1    loss: 4.8166    accuracy: 0.34
+1 9 11
+16:08:24 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 183.97it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 182.90it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 187.48it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 188.80it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 184.33it/s]
+16:08:32 - root - INFO - Local train procedure is finished
+Epoch: 1    loss: 3.3569    accuracy: 0.60
+[0.3855, 0.447, 0.3652, 0.2882, 0.4303, 0.3362, 0.2666, 0.4885, 0.3604, 0.5359, 0.2144, 0.6013, 0.4627, 0.3092, 0.3451, 0.4237, 0.4947, 0.4851, 0.183, 0.1865]
+0.6013
+2 0 12
+16:08:34 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 183.42it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 187.29it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 186.54it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 185.76it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 184.68it/s]
+16:08:42 - root - INFO - Local train procedure is finished
+Epoch: 2    loss: 1.7893    accuracy: 0.63
+2 1 15
+16:08:43 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 184.07it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 182.88it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 182.16it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 184.96it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 185.29it/s]
+16:08:51 - root - INFO - Local train procedure is finished
+Epoch: 2    loss: 4.1572    accuracy: 0.52
+2 2 10
+16:08:53 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 181.22it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 182.98it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 182.68it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 178.64it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 180.17it/s]
+16:09:01 - root - INFO - Local train procedure is finished
+Epoch: 2    loss: 3.5880    accuracy: 0.40
+2 3 1
+16:09:02 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 182.75it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 177.10it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 184.66it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 183.62it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 183.35it/s]
+16:09:10 - root - INFO - Local train procedure is finished
+Epoch: 2    loss: 4.9622    accuracy: 0.52
+2 4 18
+16:09:12 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 187.07it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 184.41it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 183.75it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 179.66it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 178.05it/s]
+16:09:20 - root - INFO - Local train procedure is finished
+Epoch: 2    loss: 4.0065    accuracy: 0.36
+2 5 2
+16:09:21 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 177.79it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 183.43it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 180.55it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 183.32it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 179.34it/s]
+16:09:30 - root - INFO - Local train procedure is finished
+Epoch: 2    loss: 4.6759    accuracy: 0.44
+2 6 13
+16:09:31 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 180.56it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 179.79it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 181.03it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 182.05it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 184.82it/s]
+16:09:39 - root - INFO - Local train procedure is finished
+Epoch: 2    loss: 4.0531    accuracy: 0.45
+2 7 5
+16:09:40 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 182.38it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 178.51it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 177.62it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 182.68it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 179.68it/s]
+16:09:49 - root - INFO - Local train procedure is finished
+Epoch: 2    loss: 4.2785    accuracy: 0.42
+2 8 3
+16:09:50 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 178.26it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 183.88it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 183.25it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 183.93it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 183.83it/s]
+16:09:58 - root - INFO - Local train procedure is finished
+Epoch: 2    loss: 5.2097    accuracy: 0.33
+2 9 16
+16:10:00 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 184.63it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 179.05it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 178.40it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 175.84it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 180.44it/s]
+16:10:08 - root - INFO - Local train procedure is finished
+Epoch: 2    loss: 4.1506    accuracy: 0.53
+[0.3855, 0.5214, 0.4384, 0.3259, 0.4303, 0.4246, 0.2666, 0.4885, 0.3604, 0.5359, 0.4042, 0.6013, 0.6299, 0.4486, 0.3451, 0.519, 0.5323, 0.4851, 0.36, 0.1865]
+0.6299
+3 0 4
+16:10:09 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 183.44it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 183.09it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 179.72it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 182.49it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 184.00it/s]
+16:10:17 - root - INFO - Local train procedure is finished
+Epoch: 3    loss: 3.7508    accuracy: 0.51
+3 1 15
+16:10:19 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 180.44it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 182.81it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 181.27it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 184.97it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 183.17it/s]
+16:10:27 - root - INFO - Local train procedure is finished
+Epoch: 3    loss: 4.4430    accuracy: 0.55
+3 2 18
+16:10:28 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 184.24it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 182.09it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 186.47it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 183.45it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 181.19it/s]
+16:10:36 - root - INFO - Local train procedure is finished
+Epoch: 3    loss: 4.0392    accuracy: 0.47
+3 3 13
+16:10:38 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 184.88it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 182.36it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 181.73it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 181.74it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 181.62it/s]
+16:10:46 - root - INFO - Local train procedure is finished
+Epoch: 3    loss: 4.1227    accuracy: 0.50
+3 4 7
+16:10:47 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 182.34it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 175.34it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 175.69it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 177.00it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 178.35it/s]
+16:10:56 - root - INFO - Local train procedure is finished
+Epoch: 3    loss: 5.2241    accuracy: 0.53
+3 5 16
+16:10:57 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 178.80it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 177.29it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 181.13it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 176.05it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 172.23it/s]
+16:11:06 - root - INFO - Local train procedure is finished
+Epoch: 3    loss: 4.5639    accuracy: 0.55
+3 6 3
+16:11:07 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 179.52it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 180.04it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 175.32it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 172.35it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 174.28it/s]
+16:11:15 - root - INFO - Local train procedure is finished
+Epoch: 3    loss: 5.3855    accuracy: 0.36
+3 7 17
+16:11:17 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 176.15it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 179.98it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 180.29it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 174.46it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 175.44it/s]
+16:11:25 - root - INFO - Local train procedure is finished
+Epoch: 3    loss: 3.0234    accuracy: 0.54
+3 8 1
+16:11:26 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 176.69it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 175.22it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 178.04it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 178.12it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 176.02it/s]
+16:11:35 - root - INFO - Local train procedure is finished
+Epoch: 3    loss: 5.3955    accuracy: 0.55
+3 9 10
+16:11:36 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 178.19it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 176.58it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 178.48it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 180.10it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 178.92it/s]
+16:11:45 - root - INFO - Local train procedure is finished
+Epoch: 3    loss: 3.4525    accuracy: 0.48
+[0.3855, 0.5525, 0.4384, 0.3609, 0.5082, 0.4246, 0.2666, 0.5309, 0.3604, 0.5359, 0.4785, 0.6013, 0.6299, 0.4994, 0.3451, 0.5489, 0.5493, 0.5385, 0.4659, 0.1865]
+0.6299
+4 0 14
+16:11:46 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 174.51it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 177.91it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 176.58it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 171.75it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 179.88it/s]
+16:11:55 - root - INFO - Local train procedure is finished
+Epoch: 4    loss: 4.0178    accuracy: 0.39
+4 1 1
+16:11:56 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 179.50it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 175.57it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 175.38it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 177.40it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 180.09it/s]
+16:12:04 - root - INFO - Local train procedure is finished
+Epoch: 4    loss: 5.8920    accuracy: 0.56
+4 2 10
+16:12:06 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 177.02it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 179.92it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 179.95it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 174.75it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 175.14it/s]
+16:12:14 - root - INFO - Local train procedure is finished
+Epoch: 4    loss: 3.5401    accuracy: 0.54
+4 3 13
+16:12:16 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 173.41it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 178.37it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 156.97it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 173.34it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 178.37it/s]
+16:12:24 - root - INFO - Local train procedure is finished
+Epoch: 4    loss: 4.3306    accuracy: 0.53
+4 4 6
+16:12:26 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 176.59it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 176.55it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 176.51it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 183.58it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 179.11it/s]
+16:12:34 - root - INFO - Local train procedure is finished
+Epoch: 4    loss: 4.8201    accuracy: 0.37
+4 5 19
+16:12:35 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 182.52it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 175.29it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 174.13it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 170.94it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 179.45it/s]
+16:12:44 - root - INFO - Local train procedure is finished
+Epoch: 4    loss: 3.7439    accuracy: 0.45
+4 6 4
+16:12:45 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 183.88it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 181.89it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 182.20it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 180.47it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 178.29it/s]
+16:12:53 - root - INFO - Local train procedure is finished
+Epoch: 4    loss: 4.0356    accuracy: 0.55
+4 7 0
+16:12:55 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 175.72it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 177.00it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 180.59it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 178.79it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 181.67it/s]
+16:13:03 - root - INFO - Local train procedure is finished
+Epoch: 4    loss: 3.5784    accuracy: 0.49
+4 8 15
+16:13:04 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 181.93it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 177.10it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 178.20it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 179.75it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 178.60it/s]
+16:13:13 - root - INFO - Local train procedure is finished
+Epoch: 4    loss: 4.8668    accuracy: 0.56
+4 9 5
+16:13:14 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 164.21it/s]
+root, Epoch 1: 100% 300/300 [00:02<00:00, 131.05it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 175.23it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 180.67it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 179.87it/s]
+16:13:23 - root - INFO - Local train procedure is finished
+Epoch: 4    loss: 4.4868    accuracy: 0.48
+[0.4937, 0.5629, 0.4384, 0.3609, 0.5467, 0.4775, 0.3663, 0.5309, 0.3604, 0.5359, 0.5434, 0.6013, 0.6299, 0.5305, 0.3886, 0.5587, 0.5493, 0.5385, 0.4659, 0.4453]
+0.6299
+5 0 1
+16:13:25 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 181.70it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 179.20it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 176.93it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 174.94it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 176.75it/s]
+16:13:33 - root - INFO - Local train procedure is finished
+Epoch: 5    loss: 6.3373    accuracy: 0.57
+5 1 11
+16:13:34 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 181.74it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 178.86it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 180.84it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 184.71it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 184.57it/s]
+16:13:43 - root - INFO - Local train procedure is finished
+Epoch: 5    loss: 3.6693    accuracy: 0.64
+5 2 0
+16:13:44 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 181.06it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 179.48it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 177.14it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 184.98it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 178.69it/s]
+16:13:52 - root - INFO - Local train procedure is finished
+Epoch: 5    loss: 3.9062    accuracy: 0.56
+5 3 13
+16:13:54 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 183.26it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 185.13it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 183.71it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 180.73it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 179.78it/s]
+16:14:02 - root - INFO - Local train procedure is finished
+Epoch: 5    loss: 4.6604    accuracy: 0.55
+5 4 3
+16:14:03 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 186.29it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 181.46it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 182.23it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 175.43it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 179.33it/s]
+16:14:11 - root - INFO - Local train procedure is finished
+Epoch: 5    loss: 5.8826    accuracy: 0.38
+5 5 18
+16:14:13 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 177.76it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 185.59it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 185.08it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 185.07it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 181.55it/s]
+16:14:21 - root - INFO - Local train procedure is finished
+Epoch: 5    loss: 3.9259    accuracy: 0.55
+5 6 5
+16:14:22 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 178.35it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 181.89it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 184.38it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 178.74it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 182.34it/s]
+16:14:31 - root - INFO - Local train procedure is finished
+Epoch: 5    loss: 4.6872    accuracy: 0.51
+5 7 10
+16:14:32 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 181.23it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 177.10it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 181.52it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 180.07it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 177.51it/s]
+16:14:40 - root - INFO - Local train procedure is finished
+Epoch: 5    loss: 3.7628    accuracy: 0.60
+5 8 2
+16:14:41 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 179.59it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 182.72it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 183.92it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 181.81it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 182.57it/s]
+16:14:50 - root - INFO - Local train procedure is finished
+Epoch: 5    loss: 4.8593    accuracy: 0.51
+5 9 16
+16:14:51 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 180.76it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 184.92it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 187.39it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 182.69it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 181.29it/s]
+16:14:59 - root - INFO - Local train procedure is finished
+Epoch: 5    loss: 5.1094    accuracy: 0.56
+[0.5612, 0.571, 0.5091, 0.3846, 0.5467, 0.5144, 0.3663, 0.5309, 0.3604, 0.5359, 0.5966, 0.638, 0.6299, 0.5496, 0.3886, 0.5587, 0.5594, 0.5385, 0.5542, 0.4453]
+0.638
+6 0 13
+16:15:01 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 184.42it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 184.31it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 181.91it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 180.31it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 182.96it/s]
+16:15:09 - root - INFO - Local train procedure is finished
+Epoch: 6    loss: 5.1251    accuracy: 0.56
+6 1 3
+16:15:10 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 182.77it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 179.50it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 177.02it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 179.05it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 183.44it/s]
+16:15:18 - root - INFO - Local train procedure is finished
+Epoch: 6    loss: 6.3670    accuracy: 0.40
+6 2 7
+16:15:20 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 184.23it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 175.96it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 182.75it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 180.21it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 182.45it/s]
+16:15:28 - root - INFO - Local train procedure is finished
+Epoch: 6    loss: 5.7463    accuracy: 0.56
+6 3 1
+16:15:29 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 186.10it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 183.95it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 180.78it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 182.01it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 184.74it/s]
+16:15:38 - root - INFO - Local train procedure is finished
+Epoch: 6    loss: 6.7295    accuracy: 0.58
+6 4 16
+16:15:39 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 181.49it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 182.70it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 178.32it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 182.54it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 181.19it/s]
+16:15:47 - root - INFO - Local train procedure is finished
+Epoch: 6    loss: 5.7088    accuracy: 0.57
+6 5 15
+16:15:48 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 179.50it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 179.52it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 184.19it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 180.02it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 181.06it/s]
+16:15:57 - root - INFO - Local train procedure is finished
+Epoch: 6    loss: 5.2558    accuracy: 0.56
+6 6 0
+16:15:58 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 181.96it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 182.73it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 183.85it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 178.84it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 184.96it/s]
+16:16:06 - root - INFO - Local train procedure is finished
+Epoch: 6    loss: 4.3314    accuracy: 0.60
+6 7 2
+16:16:07 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 182.83it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 178.32it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 180.48it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 178.35it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 182.12it/s]
+16:16:16 - root - INFO - Local train procedure is finished
+Epoch: 6    loss: 5.1370    accuracy: 0.54
+6 8 18
+16:16:17 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 180.69it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 184.07it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 183.52it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 183.65it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 181.83it/s]
+16:16:25 - root - INFO - Local train procedure is finished
+Epoch: 6    loss: 3.9904    accuracy: 0.60
+6 9 6
+16:16:27 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 184.11it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 180.32it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 179.26it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 176.71it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 183.42it/s]
+16:16:35 - root - INFO - Local train procedure is finished
+Epoch: 6    loss: 5.4964    accuracy: 0.38
+[0.5995, 0.5756, 0.5394, 0.4037, 0.5467, 0.5144, 0.3771, 0.5559, 0.3604, 0.5359, 0.5966, 0.638, 0.6299, 0.5614, 0.3886, 0.5634, 0.5662, 0.5385, 0.6014, 0.4453]
+0.638
+7 0 5
+16:16:36 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 183.65it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 179.44it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 181.24it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 185.59it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 179.18it/s]
+16:16:45 - root - INFO - Local train procedure is finished
+Epoch: 7    loss: 4.8951    accuracy: 0.53
+7 1 3
+16:16:46 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 181.47it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 177.15it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 183.89it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 179.30it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 184.31it/s]
+16:16:54 - root - INFO - Local train procedure is finished
+Epoch: 7    loss: 6.8816    accuracy: 0.42
+7 2 13
+16:16:55 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 184.94it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 182.45it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 183.59it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 176.89it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 182.53it/s]
+16:17:04 - root - INFO - Local train procedure is finished
+Epoch: 7    loss: 5.5753    accuracy: 0.57
+7 3 18
+16:17:05 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 182.39it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 181.27it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 181.70it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 183.15it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 179.37it/s]
+16:17:13 - root - INFO - Local train procedure is finished
+Epoch: 7    loss: 4.1335    accuracy: 0.62
+7 4 14
+16:17:15 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 180.55it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 177.08it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 180.09it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 178.47it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 174.18it/s]
+16:17:23 - root - INFO - Local train procedure is finished
+Epoch: 7    loss: 4.2895    accuracy: 0.43
+7 5 1
+16:17:24 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 180.05it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 176.68it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 183.39it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 180.29it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 181.32it/s]
+16:17:33 - root - INFO - Local train procedure is finished
+Epoch: 7    loss: 7.0716    accuracy: 0.58
+7 6 10
+16:17:34 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 183.31it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 182.95it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 183.28it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 180.54it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 184.71it/s]
+16:17:42 - root - INFO - Local train procedure is finished
+Epoch: 7    loss: 4.0369    accuracy: 0.62
+7 7 17
+16:17:43 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 180.51it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 180.06it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 183.18it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 184.12it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 183.07it/s]
+16:17:52 - root - INFO - Local train procedure is finished
+Epoch: 7    loss: 3.1526    accuracy: 0.59
+7 8 12
+16:17:53 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 182.50it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 182.63it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 185.59it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 182.86it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 184.33it/s]
+16:18:01 - root - INFO - Local train procedure is finished
+Epoch: 7    loss: 1.6914    accuracy: 0.71
+7 9 7
+16:18:02 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 180.91it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 180.64it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 180.42it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 187.51it/s]
+root, Epoch 4: 100% 300/300 [00:02<00:00, 147.92it/s]
+16:18:11 - root - INFO - Local train procedure is finished
+Epoch: 7    loss: 6.3046    accuracy: 0.57
+[0.5995, 0.5779, 0.5394, 0.4201, 0.5467, 0.5318, 0.3771, 0.5698, 0.3604, 0.5359, 0.6249, 0.638, 0.7124, 0.5703, 0.4264, 0.5634, 0.5662, 0.589, 0.6246, 0.4453]
+0.7124
+8 0 3
+16:18:13 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 178.95it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 180.79it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 180.38it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 184.65it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 179.44it/s]
+16:18:21 - root - INFO - Local train procedure is finished
+Epoch: 8    loss: 7.3958    accuracy: 0.44
+8 1 10
+16:18:22 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 184.77it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 182.63it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 185.49it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 181.06it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 183.53it/s]
+16:18:31 - root - INFO - Local train procedure is finished
+Epoch: 8    loss: 4.3550    accuracy: 0.64
+8 2 4
+16:18:32 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 186.65it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 178.14it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 178.40it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 181.47it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 182.81it/s]
+16:18:40 - root - INFO - Local train procedure is finished
+Epoch: 8    loss: 4.4895    accuracy: 0.57
+8 3 2
+16:18:41 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 185.03it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 185.15it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 182.07it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 177.93it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 184.44it/s]
+16:18:50 - root - INFO - Local train procedure is finished
+Epoch: 8    loss: 5.5119    accuracy: 0.56
+8 4 7
+16:18:51 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 184.31it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 181.99it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 181.12it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 179.35it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 182.51it/s]
+16:18:59 - root - INFO - Local train procedure is finished
+Epoch: 8    loss: 6.8211    accuracy: 0.58
+8 5 13
+16:19:01 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 182.74it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 178.26it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 182.20it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 180.24it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 180.70it/s]
+16:19:09 - root - INFO - Local train procedure is finished
+Epoch: 8    loss: 6.0088    accuracy: 0.58
+8 6 11
+16:19:10 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 184.85it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 184.36it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 180.16it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 182.43it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 184.16it/s]
+16:19:18 - root - INFO - Local train procedure is finished
+Epoch: 8    loss: 4.2456    accuracy: 0.65
+8 7 9
+16:19:20 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 179.16it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 174.06it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 175.28it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 177.15it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 176.55it/s]
+16:19:28 - root - INFO - Local train procedure is finished
+Epoch: 8    loss: 2.0692    accuracy: 0.64
+8 8 12
+16:19:29 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 173.54it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 176.15it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 175.81it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 178.23it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 174.73it/s]
+16:19:38 - root - INFO - Local train procedure is finished
+Epoch: 8    loss: 1.6893    accuracy: 0.76
+8 9 8
+16:19:39 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 176.91it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 178.73it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 173.54it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 176.77it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 175.26it/s]
+16:19:48 - root - INFO - Local train procedure is finished
+Epoch: 8    loss: 3.3533    accuracy: 0.48
+[0.5995, 0.5779, 0.5579, 0.4366, 0.5676, 0.5318, 0.3771, 0.5798, 0.4775, 0.6388, 0.6398, 0.6524, 0.7624, 0.5783, 0.4264, 0.5634, 0.5662, 0.589, 0.6246, 0.4453]
+0.7624
+9 0 12
+16:19:49 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 175.99it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 180.59it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 177.29it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 179.55it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 177.38it/s]
+16:19:58 - root - INFO - Local train procedure is finished
+Epoch: 9    loss: 1.7404    accuracy: 0.80
+9 1 17
+16:19:59 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 180.62it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 176.57it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 177.67it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 179.80it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 176.68it/s]
+16:20:07 - root - INFO - Local train procedure is finished
+Epoch: 9    loss: 3.3974    accuracy: 0.62
+9 2 9
+16:20:09 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 170.67it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 176.82it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 178.33it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 171.98it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 170.94it/s]
+16:20:17 - root - INFO - Local train procedure is finished
+Epoch: 9    loss: 1.9921    accuracy: 0.71
+9 3 19
+16:20:19 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 178.75it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 177.74it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 175.40it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 175.74it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 173.37it/s]
+16:20:27 - root - INFO - Local train procedure is finished
+Epoch: 9    loss: 3.7718    accuracy: 0.51
+9 4 1
+16:20:29 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 177.02it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 175.61it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 178.85it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 175.44it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 182.51it/s]
+16:20:37 - root - INFO - Local train procedure is finished
+Epoch: 9    loss: 7.3694    accuracy: 0.58
+9 5 18
+16:20:38 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 180.65it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 177.89it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 179.19it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 177.75it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 177.63it/s]
+16:20:47 - root - INFO - Local train procedure is finished
+Epoch: 9    loss: 4.3325    accuracy: 0.64
+9 6 0
+16:20:48 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 176.07it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 175.16it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 177.19it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 173.95it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 179.57it/s]
+16:20:56 - root - INFO - Local train procedure is finished
+Epoch: 9    loss: 4.8082    accuracy: 0.62
+9 7 16
+16:20:58 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 181.15it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 176.59it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 173.53it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 178.69it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 175.38it/s]
+16:21:06 - root - INFO - Local train procedure is finished
+Epoch: 9    loss: 6.2861    accuracy: 0.57
+9 8 14
+16:21:08 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 175.65it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 178.64it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 177.68it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 173.83it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 173.58it/s]
+16:21:16 - root - INFO - Local train procedure is finished
+Epoch: 9    loss: 4.8537    accuracy: 0.47
+9 9 7
+16:21:17 - root - INFO - Local train procedure is running
+root, Epoch 0: 100% 300/300 [00:01<00:00, 181.85it/s]
+root, Epoch 1: 100% 300/300 [00:01<00:00, 179.83it/s]
+root, Epoch 2: 100% 300/300 [00:01<00:00, 177.51it/s]
+root, Epoch 3: 100% 300/300 [00:01<00:00, 177.80it/s]
+root, Epoch 4: 100% 300/300 [00:01<00:00, 178.57it/s]
+16:21:26 - root - INFO - Local train procedure is finished
+Epoch: 9    loss: 7.2597    accuracy: 0.59
+[0.6217, 0.5791, 0.5579, 0.4366, 0.5676, 0.5318, 0.3771, 0.5863, 0.4775, 0.7112, 0.6398, 0.6524, 0.7985, 0.5783, 0.4665, 0.5634, 0.5731, 0.6161, 0.6376, 0.513]
+0.7985
